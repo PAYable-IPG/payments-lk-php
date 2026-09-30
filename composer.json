@@ -1,0 +1,42 @@
+{
+    "name": "payments-lk/payments-lk-php",
+    "description": "PHP server SDK for the Payments.lk API: checkouts, payments, refunds, payment links, saved cards, events, the account and webhook verification.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["payments", "payments.lk", "payable", "sri lanka", "lkr", "checkout", "webhooks"],
+    "homepage": "https://payments.lk/developers/sdks#php",
+    "authors": [
+        {
+            "name": "Payments.lk",
+            "email": "hello@payments.lk",
+            "homepage": "https://payments.lk"
+        }
+    ],
+    "support": {
+        "email": "hello@payments.lk",
+        "issues": "https://github.com/PAYable-IPG/payments-lk-php/issues",
+        "source": "https://github.com/PAYable-IPG/payments-lk-php",
+        "docs": "https://payments.lk/developers/sdks#php"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PaymentsLk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PaymentsLk\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "php tests/run.php"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
